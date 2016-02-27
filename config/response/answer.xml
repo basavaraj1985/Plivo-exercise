@@ -1,0 +1,6 @@
+<Response>
+	<Record action="http://ef323007.ngrok.io/record" fileFormat="wav" recordSession="true"
+            callbackUrl="http://ef323007.ngrok.io/callback" callbackMethod="GET" redirect="false" />
+	<!-- <Play>http://s3.amazonaws.com/plivocloud/music.mp3</Play> -->
+    <Play>http://www.signalogic.com/melp/EngSamples/Orig/male.wav</Play><!-- 51 seconds -->
+</Response>

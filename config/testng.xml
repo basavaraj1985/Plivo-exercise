@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PlivoTests" parallel="tests" thread-count="1" >
+    <parameter name="configFile" value="config/plivoTestconfig.properties" />
+
+    <test verbose="5" name="STARS-SDK" annotations="JDK" parallel="classes" thread-count="25" >
+        <groups>
+            <run>
+                <include name="recording" />
+                <exclude name="todo" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.plivotest.PlivoCallTest" />
+        </classes>
+        <packages>
+            <package name="com.plivotest"/>
+        </packages>
+    </test>
+
+    <listeners>
+        <!--<listener class-name="com.javasbar.framework.testng.reporters.TimeoutRetryAnalyzer" />-->
+        <!--<listener class-name="com.javasbar.framework.testng.reporters.SmartReporter" />-->
+        <!--<listener class-name="com.javasbar.framework.testng.reporters.ProgressReporter" />-->
+        <listener class-name="org.testng.reporters.EmailableReporter" />
+    </listeners>
+</suite>

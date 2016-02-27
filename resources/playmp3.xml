@@ -1,0 +1,4 @@
+<Response>
+	<Record action="http://a6bde776.ngrok.io" fileFormat="mp3" recordSession="true" callbackUrl="http://a6bde776.ngrok.io/callback" redirect="false" />
+	<Play>http://s3.amazonaws.com/plivocloud/music.mp3</Play>
+</Response>
